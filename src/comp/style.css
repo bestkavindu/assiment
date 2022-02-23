@@ -11,6 +11,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     height: 300px;
+    margin-left: 40px;
  
 }
 
@@ -25,7 +26,6 @@ body{
 .item{
     margin: 1rem;
     border: solid 1px;
-    border-radius: 2px;
     border-radius: 20px;
     background-color:rgb(201, 199, 199);
     padding: 10px;
@@ -41,31 +41,71 @@ body{
     padding: 5px;
     margin: 5px;
     border-radius: 20px;
+    width: 100%;
 }
 .header{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding: 0 70px;
+    padding:0.5rem;
     height: 100px;
     position: sticky;
     background-color: #006d2a;
     color: aliceblue;
     font-size: 20px;
+    z-index: 10;
 
 }
 .nav-item{
-    margin-left: 20px;
     font-weight: 500;
     margin-top: 30px;
     cursor: pointer;
     text-align: center;
     list-style: none;
+    padding:0.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .logo{
 
     margin-top: 10px;
     padding: 5px;
+    margin-right: -20px;
 
 }
+
+@media screen and (max-width:720px) {
+    .card-container{
+        display: block;
+        align-items: center;
+        position: relative;
+    }
+    .movie-card{
+        align-items: center;
+        margin-left: 30px;
+    }
+
+}
+@media screen and (max-width:480px) {
+    .header{
+        display: block;
+        margin: 0;
+    }
+
+}
+@media screen and (max-width:480px) {
+    .card-container{
+        display: block;
+        margin: 0;
+    }
+    .movie-card{
+        display: block;
+        margin: 0;
+    }
+    .movie-img{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+}
+
